@@ -2,19 +2,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="/src/css/owl.carousel.css" />
-    <link rel="stylesheet" href="/src/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/src/css/owl.theme.default.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+   <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
     <title>Home</title>
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+  </style>
+
   </head>
   <body>
+
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+      <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+          <svg width="32" height="36" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg"><path d="M15.922 35.798c-.946 0-1.852-.228-2.549-.638l-10.825-6.379c-1.428-.843-2.549-2.82-2.549-4.501v-12.762c0-1.681 1.12-3.663 2.549-4.501l10.825-6.379c.696-.41 1.602-.638 2.549-.638.946 0 1.852.228 2.549.638l10.825 6.379c1.428.843 2.549 2.82 2.549 4.501v12.762c0 1.681-1.12 3.663-2.549 4.501l-10.825 6.379c-.696.41-1.602.638-2.549.638zm0-33.474c-.545 0-1.058.118-1.406.323l-10.825 6.383c-.737.433-1.406 1.617-1.406 2.488v12.762c0 .866.67 2.05 1.406 2.488l10.825 6.379c.348.205.862.323 1.406.323.545 0 1.058-.118 1.406-.323l10.825-6.383c.737-.433 1.406-1.617 1.406-2.488v-12.757c0-.866-.67-2.05-1.406-2.488l-10.825-6.379c-.348-.21-.862-.328-1.406-.328zM26.024 13.104l-7.205 13.258-3.053-5.777-3.071 5.777-7.187-13.258h4.343l2.803 5.189 3.107-5.832 3.089 5.832 2.821-5.189h4.352z"></path></svg>
+      </a>
+    </div>
+  
+     <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+  
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="index.html">Home</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="about.html">About</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="services.html">Services</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="contact.html">Contact</a></li>
+          <!-- <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Support</a></li> -->
+        </ul>
+      </nav>
+      <!-- <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+        <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="https://pbs.twimg.com/profile_images/1128143121475342337/e8tkhRaz_normal.jpg" alt="Andy Leverenz">
+      </a> -->
+  
+    </div>
+  
+    </header>
+
     <main
       class="relative isolate overflow-hidden bg-gray-900 py-16 py-24 lg:py-32"
     >
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Navigation starts -->
-        <header></header>
+        
         <!-- Navigation ends -->
 
         <!-- Top Banner -->
@@ -62,7 +99,7 @@
           class="my-16 text-white md:h-24 h-64 p-4 flex md:flex-row flex-col justify-center items-center"
         >
           <!-- first -->
-          <div class="text-2xl md:text-4xl font-semibold text-center md:text-left">
+          <div class="border-0 md:border-l md:p-4 text-lg md:text-xl font-semibold text-center md:text-left">
             <h3 class="">Partnering for a Secure Future</h3>
           </div>
          
@@ -70,7 +107,7 @@
           
        
           <!-- second -->
-         <div class="text-2xl md:text-4xl font-semibold text-center md:text-left m-8">
+         <div class="border-0 md:border-l md:p-4 text-lg md:text-xl font-semibold text-center md:text-left m-8">
            <h3>Experienced Professionals</h3>
          </div>
           
@@ -78,7 +115,7 @@
                 
           <!--third -->
        
-            <h3 class="text-2xl md:text-4xl font-semibold text-center md:text-left">
+            <h3 class="border-0 md:border-l md:p-4 text-lg md:text-xl font-semibold text-center md:text-left">
               Cost-Effective Solutions
             </h3>
        
@@ -138,7 +175,7 @@
           </div>
           <!-- left side ends -->
           <!-- Carousel right side -->
-          <div class="owl-carousel owl-theme text-xl md:text-2xl col-span-3">
+          <div class="owl-carousel owl-theme md:text-lg col-span-3">
             <!-- content -->
             <div>
               <div>
@@ -218,7 +255,7 @@
           <!-- Carousel right side ends -->
         </div>
         <!-- services ends -->
-        
+
         <div class="mt-16"></div>
         <!-- banner test -->
         <div
@@ -338,18 +375,18 @@
         <div class="grid grid-cols-1 md:grid-cols-4 text-white">
           <!-- left side -->
           <div class="bg-black px-4 flex flex-col justify-center">
-            <h1 class="font-semibold text-2xl h-[2rem]">
-              Smart Hunters Tech.
+            <h1 class="font-semibold text-2xl">
+              Smart Hunters Tech
             </h1>
             <p>"SAFETY, WITH A SMILE!"</p>
           </div>
           <!-- left side ends -->
           <!-- carousel right side -->
-          <div class="owl-carousel owl-theme col-span-3 text-black">
+          <div class="owl-carousel owl-theme col-span-3 text-white">
             <!-- 1 -->
             <!-- card -->
-            <div class="bg-white drop-shadow-lg p-4">
-              <p class="w-2 h-[2rem]">
+            <div class="drop-shadow-lg p-4 bg-white text-black">
+              <p>
                 As a security guard, I recently completed their online training course. I am pleased to share that I found their course materials to be exceptional. The content was well-organized, informative, and relevant to my role.
               </p>
               <div class="flex flex-row mt-4">
@@ -385,8 +422,8 @@
             <!-- 1 ends -->
             <!-- 2 -->
             <!-- card -->
-            <div class="bg-white drop-shadow-lg p-4">
-              <p class="w-2 h-[2rem]">
+            <div class="drop-shadow-lg p-4 bg-white text-black">
+              <p>
                 I took the trainings programme of Smart Hunters Innovative Technologies, the training modules were presented in a clear and engaging manner, making it easy for me to grasp the concepts. It was an easy approach to learning.
               </p>
               <div class="flex flex-row mt-4">
@@ -420,8 +457,8 @@
             <!-- 2 ends -->
             <!-- 3 -->
             <!-- card -->
-            <div class="bg-white drop-shadow-lg p-4">
-              <p class="w-2 h-[2rem]">
+            <div class="drop-shadow-lg p-4 bg-white text-black">
+              <p>
                 The platform was user-friendly, allowing me to navigate through the material seamlessly. The interactive elements, such as quizzes and practical scenarios, enhanced my learning experience. I appreciate the effort put into creating this.
               </p>
               <div class="flex flex-row mt-4">
@@ -456,8 +493,8 @@
             
             <!-- 5 -->
             <!-- card -->
-            <div class="bg-white drop-shadow-lg p-4">
-              <p class="w-2 h-[2rem]">
+            <div class="drop-shadow-lg p-4 bg-white text-black">
+              <p>
                 I am highly satisfied with the course materials provided by Smart Hunters Innovative Technologies. They have equipped me with essential knowledge and skills relevant to my profession as a security guard. I would recommend any day.
               </p>
               <div class="flex flex-row mt-4">
